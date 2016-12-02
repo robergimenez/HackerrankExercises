@@ -55,9 +55,6 @@ class Student extends Person {
     private int[] testScores;
 
     Student(String firstName, String lastName, int identification, int[] numScores){
- /*       this.firstName = firstName;
-        this.lastName = lastName;
-        this.idNumber = identification;*/
         super(firstName, lastName, identification);
         this.testScores = numScores;
     }
