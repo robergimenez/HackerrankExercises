@@ -22,14 +22,7 @@ public class Solution {
             diag1 += array[i][i];
             diag2 += array[i][filas-i-1];
         }
-        diag1= positivar(diag1);
-        diag2= positivar(diag2);
-        int resultado = 0;
-        if (diag1 > diag2){
-            resultado = diag1-diag2;
-        }else {
-            resultado = diag2-diag1;
-        }
+        int resultado = positivar(diag1) + positivar(diag2);
         System.out.println(resultado);
 
     }
