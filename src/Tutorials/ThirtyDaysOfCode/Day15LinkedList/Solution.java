@@ -18,13 +18,16 @@ public class Solution {
 
     public static  Node insert(Node head,int data) {
         //Complete this method
-        Node nodo = new Node(data);
-        if (head == null){
+        if (head == null) {
             head = new Node(data);
-            head.next =  null;
-        }else {
-            head.next = nodo;
-        }
+        }else{
+            Node aux = head;
+            while (aux.next != null){
+                aux = aux.next;
+            }
+                Node nodo = new Node(data);
+                aux.next=nodo;
+            }
         return head;
     }
     public static void display(Node head) {
