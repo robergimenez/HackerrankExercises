@@ -19,7 +19,6 @@ public class Solution {
             }else {
                 mapa.put(s.charAt(i),1);
             }
-
         }
         char primero, segundo;
         Set<Character> c = mapa.keySet();
